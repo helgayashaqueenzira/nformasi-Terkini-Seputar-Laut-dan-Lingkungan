@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helga News - Berita kelautan</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #88c8ea;
+            margin: 20px;
+            color: #263746;
+        }
+
+        .kontainer{
+            width: 600px;
+            max-width: 100%;
+            margin: auto;
+            border: 2px solid #174b70;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+        }
+
+        .header{
+            background-color: #164e78;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1{
+            margin: 0;
+            font-size: 27px;
+        }
+
+        .header p{
+            margin-bottom: 0;
+            font-size: 12px;
+        }
+
+        .konten{
+            display: flex;
+        }
+
+        .sidebar{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .aside{
+            background-color: #a5d9e8;
+            padding: 60px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .aside h3{
+            color: #164e78;
+        }
+
+        .aside img{
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .aside p{
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .nav-sidebar{
+            background-color: #3280b1;
+            padding: 100px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .nav-sidebar h3{
+            color: #55300f;
+        }
+
+        .nav-sidebar a{
+            display: block;
+            color: #55300f;
+            text-decoration: none;
+            margin: 12px 0;
+            font-size: 12px;
+        }
+
+        .main{
+            width: 60%;
+            background-color: #f3f8fa;
+            padding: 15px;
+        }
+
+        .main h2{
+            font-size: 19px;
+            color: #164e78;
+            margin-top: 5px;
+        }
+
+        .main h3{
+            font-size: 15px;
+            color: #164e78;
+        }
+
+        .main p{
+            font-size: 12px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .main img{
+            width: 100%;
+            height: 145px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-top: 8px;
+        }
+
+        .tanggal {
+            font-size: 10px;
+            color: gray;
+        }
+
+        .berita{
+            margin-bottom: 20px;
+            border-bottom: 1px solid #cbdde7;
+            padding-bottom: 12px;
+        }
+
+        .footer{
+            background-color: #164e78;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        @media(max-width: 600px) {
+            .konten{
+                flex-direction: column;
+            }
+            .sidebar,
+            .main{
+                width: 100%;
+            }
+            .aside,
+            .nav-sidebar{
+                padding: 30px;
+            }
+            .main img{
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="kontainer">
+        <div class="header">
+            <h1>Helga News</h1>
+            <p>Informasi Terkini Seputar Laut dan Lingkungan</p>
+        </div>
+        <div class="konten">
+        <div class="sidebar">
+        <div class="aside">
+            <h3>FAKTA LAUT</h3>
+            <img src="GAMBAR/gambar laut indah.jpg" alt="Pemandangan laut">
+            <p>
+                Lautan mencakup 71% permukaan Bumi, menghasilkan lebih dari separuh oksigen dunia, serta menjadi habitat bagi jutaan spesies. Namun, perannya dalam menjaga keseimbangan iklim dan melindungi daratan kini terancam oleh perubahan iklim dan pencemaran sampah plastik.
+            </p>
+        </div>
+
+        <div class="nav-sidebar">
+            <h3>NAVIGASI</h3>
+            <a href="#beranda">Beranda</a>
+            <a href="#berita1">Berita Laut</a>
+            <a href="#berita2">Sampah Plastik</a>
+            <a href="#berita3">Terumbu Karang</a>
+        </div>
+
+    </div>
+    <div class="main" id="beranda">
+        <h2>BERITA KELAUTAN</h2>
+
+        <div class="berita" id="berita1">
+            <img src="GAMBAR/keindahan laut biru.jpg" alt="Keindahan Laut Biru">
+            <h3>Menjaga laut Untuk Masa Depan</h3>
+        
+        <div class="tanggal">
+            9 November 2026 | Lingkungan
+        </div>
+        <p>
+           Pemerintah melalui KKP memperluas kawasan konservasi laut dan menjalankan program Laut Sebasah untuk memulihkan ekosistem, mengurangi sampah plastik, serta menjaga kelestarian laut melalui pengawasan dan partisipasi masyarakat.
+        </p>
+
+    </div>
+
+    <div class="berita" id="berita2">
+        <img src="GAMBAR/pencemaran sampah plastik.jpg" alt="Pencemaran Sampah Plastik">
+        <h3>Sampah Plastik Mengancam Ekosistem Laut</h3>
+
+        <div class="tanggal">
+            9 November 2026 | Pencemaran
+        </div>
+        <p>
+            Sampah plastik mengancam ekosistem laut karena dapat membunuh biota laut, merusak habitat, dan menghasilkan mikroplastik yang membahayakan kesehatan manusia. Selain merusak lingkungan, pencemaran ini juga menurunkan pendapatan nelayan dan sektor pariwisata. Oleh karena itu, diperlukan kerja sama dan aksi pembersihan laut untuk mengurangi sampah plastik serta menjaga kelestarian ekosistem laut.
+        </p>
+        
+    </div>
+
+    <div class="berita" id="berita3">
+        <img src="GAMBAR/terumbu karang.png" alt="Terumbu karang bawah laut">
+        <h3>Terumbu Karang dan Kehidupan Bawah Laut</h3>
+
+        <div class="tanggal">
+            9 november | Ekosistem
+        </div>
+        <p>
+            Terumbu karang merupakan ekosistem penting yang menjadi habitat bagi sekitar 25% spesies laut dan mendukung keanekaragaman hayati. Selain itu, terumbu karang berfungsi melindungi pesisir dari gelombang dan erosi serta mendukung sektor perikanan dan pariwisata bahari.
+        </p>
+        
+    </div>
+</div>
+</div>
+
+<div class="footer">
+    <p>2026 Helga News | Peduli Laut, Jaga Kehidupan</p>
+</div>
+</div>
+
+</body>
+</html>
